@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  /* font-family: 'Roboto', 'Open Sans'; */
+  font-family: 'Open Sans';
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+section {
+  margin: 2rem 0;
+}
+
+.main {
+  padding-bottom: 2rem;
+}
+
+.main,
+.main__nav {
+  margin: 0 auto;
+  width: 80vw;
+  max-width: 95vw;
+}
+
+.container {
+  display: flex;
+}
+
+/* Styly hlavičky */
+
+.header {
+  /* background-color: #743880; */
+  background-color: #283d3b;
+  color: white;
+  text-align: center;
+  height: 3rem;
+  padding: 0.5rem;
+  margin: 0;
+}
+
+.header .container {
+  justify-content: space-between;
+}
+
+.header span {
+  margin: 0 0.5rem;
+}
+
+.logo {
+  font-family: 'Amatic SC';
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.logo__img {
+  height: 2.5rem;
+  filter: invert();
+}
+
+.page_name {
+  /* color: #f9dc5c; */
+  color: #c44536;
+  font-family: 'Pacifico';
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.header__img {
+  height: 3rem;
+  margin: 0 1.5rem;
+}
+
+/* Styly navigace */
+
+.navigation {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.navigation > a {
+  color: black;
+  text-decoration: none;
+  font-size: smaller;
+  font-weight: bold;
+  margin-right: 2.5rem;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.navigation > a {
+  margin-right: 0;
+}
+
+.navigation > a:active,
+.navigation > a:hover,
+.navigation > a:focus {
+  /* background-color: #f9dc5c; */
+  background-color: #197278;
+  color: white;
+  transform: scale(1.2);
+}
+
+.nav__icon {
+  width: 2rem;
+  display: block;
+  margin: auto;
+}
+
+.nav__icon:hover,
+.nav__icon:active,
+.nav__icon:focus {
+  filter: invert();
+}
+
+.navigation p {
+  text-align: center;
+  margin: 5px 0 0 0;
+}
+
+/* Styly stránky s pravidly */
+
+.rules__main {
+  margin: 0 auto;
+  width: 80vw;
+  max-width: 95vw;
+}
+
+.rules__nav > a {
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+.rules__rule {
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.rules__rule:nth-of-type(2n + 2) {
+  flex-direction: row-reverse;
+}
+
+.rules__column {
+  flex-basis: 35vw;
+  padding: 2rem;
+  background-color: #edddd4;
+  border-radius: 5px;
+}
+
+.rules__column:first-of-type {
+  margin-right: 5rem;
+}
+
+.rules__img {
+  width: 7rem;
+  margin-right: 2rem;
+  border: 3px solid #283d3b;
+  border-radius: 50%;
+}
+
+.question-mark {
+  height: 3rem;
+  padding: 2rem;
+}
+
+.rules__rule:nth-of-type(2n + 2) > .rules__img {
+  margin-right: 0;
+  margin-left: 2rem;
+}
+
+.rules__text {
+  text-align: justify;
+}
+
+.rules__column > .rules__rule:last-of-type {
+  margin-bottom: 0;
+}
+
+.rules__intro,
+.rules__epilogue {
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  padding: 2rem;
+}
+
+.rules__intro {
+  background-color: #c44536;
+  margin-bottom: 2rem;
+}
+
+.rules__epilogue {
+  background-color: #197278;
+  margin-top: 2rem;
+}
+
+/* Styly stránky hra */
+
+/* Hra – obecné styly */
+.game {
+  align-items: center;
+  margin: 0 auto;
+  height: calc(100vh - 4rem);
+  max-width: 90vw;
+}
+
+/* Hra sidebar */
+
+.game__side {
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 25%;
+  height: 85vh;
+}
+
+/* Hra – div s tlačítky navigace */
+
+.game__nav {
+  margin-right: 1.5rem;
+  background-color: #197278;
+  border-radius: 5px;
+  justify-content: space-evenly;
+}
+
+.game__nav .nav__icon {
+  filter: invert();
+}
+
+.game__nav > a {
+  margin-right: 0;
+  color: white;
+}
+
+.game__nav > a:hover,
+.game__nav > a:active,
+.game__nav > a:hover {
+  /* background-color: #743880; */
+  background-color: #772e25;
+  color: white;
+  transform: scale(1.2);
+}
+
+.nav__icon:hover,
+.nav__icon:active,
+.nav__icon:focus {
+  filter: invert();
+}
+
+/* Hra – počítadla uvnitř inventáře */
+
+.game__counters {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.game__counters img {
+  height: 2.5rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.game__counters div {
+  margin-top: 5px;
+}
+
+.game__counters p {
+  font-size: smaller;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.game__counter {
+  margin: 0 auto;
+  width: calc(100% / 3);
+}
+
+.test_tube__count,
+.timer__count,
+.countR__count {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+}
+
+.countR__count {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: #f9dc5c; */
+  background-color: #197278;
+  border: 0.5px solid #06070e;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px -3px rgba(6, 7, 14, 1);
+  width: 4rem;
+  height: 4rem;
+  padding: 0px;
+  margin-right: 0;
+}
+
+/* Hra – inventář */
+
+.inventory {
+  flex-direction: column;
+  justify-content: space-around;
+  /* background-color: #ff8c61; */
+  background-color: #c44536;
+  border-radius: 5px;
+  height: 75vh;
+  margin-right: 1.5rem;
+}
+
+.inventory__img {
+  display: block;
+  width: 2.5rem;
+  margin: 0 auto;
+}
+
+.inventory__icon p {
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  margin: 5px 0 15px 0;
+}
+
+.inventory hr {
+  /* border: 1px solid rgba(6, 7, 14, 0.5); */
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin: 0 2rem 1rem 2rem;
+}
+
+.inventory__items {
+  /* padding: 1rem; */
+  margin: 0 auto;
+  flex-basis: 38vh;
+}
+
+.inventory__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inventory__column:nth-of-type(2n) {
+  justify-content: space-evenly;
+}
+
+/* Hra – karta */
+
+.game__main {
+  position: relative;
+  text-align: center;
+  /* background-color: #a2dbe2; */
+  background-color: #edddd4;
+  border-radius: 5px;
+  height: 85vh;
+  flex-basis: 75%;
+  margin-top: 1rem;
+  overflow: hidden;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+.card {
+  height: 100%;
+}
+
+.map {
+  background-image: url(img/Asset\ 2.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60vw;
+  height: 80vh;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.top-right {
+  position: absolute;
+  width: 1rem;
+  top: 5px;
+  right: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.top-right:hover,
+.top-right:active,
+.top-right:focus {
+  /* background-color: #f9dc5c; */
+  background-color: #197278;
+}
+
+/* Hra – karta budovy */
+
+.building__img {
+  width: 70%;
+  max-height: 50%;
+}
+
+.card__buttons button {
+  /* background-color: #743880; */
+  background-color: #772e25;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 2rem;
+}
+
+.card__buttons button:first-of-type {
+  margin-left: 0;
+}
+
+.card__buttons button:hover,
+.card__buttons button:active,
+.card__buttons button:focus {
+  /* color: black; */
+  /* background-color: #f9dc5c; */
+  background-color: #197278;
+  transform: scale(1.2);
+}
+
+.building__text h4,
+.building__text p {
+  margin: 0;
+}
+
+.municipal_house h4 {
+  margin-bottom: 1rem;
+}
+
+/* Hra – karta rébusu */
+
+.quizz {
+  justify-content: center;
+  align-items: center;
+}
+
+.quizz__img {
+  width: 80vh;
+  max-height: calc(100% - 2rem);
+}
+
+.quizz__text {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 20%;
+}
+
+.quizz__text button {
+  width: fit-content;
+  margin: 1rem auto;
+}
+
+.answer {
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.answer td {
+  width: 100px;
+}
+
+.answer__img {
+  height: 50px;
+}
+
+.answer__button {
+  background-color: #f9dc5c;
+  color: black;
+  font-weight: 700;
+  height: fit-content;
+  padding: 9px 12px;
+  border: none;
+  border-radius: 5px;
+}
+
+.answer__button:hover,
+.answer__button:active,
+.answer__button:focus {
+  background-color: #743880;
+  color: white;
+  transform: scale(1.2);
+}
+
+/* Hra – karta hřbitova */
+
+.cemetery__img {
+  width: 70%;
+  max-height: 50%;
+}
+
+.cemetery__text h4,
+.cemetery__text p {
+  margin: 0;
+}
+
+.paragraph {
+  margin-top: 5px;
+}
+
+.paragraph:first-of-type {
+  margin-right: 5rem;
+}
+
+.cemetery__button {
+  margin-left: 2rem;
+}
+
+.cemetery__button:first-of-type {
+  margin-left: 0;
+}
+
+/* Hra – karta nápovědy */
+
+.game__hints {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.game__hints h4 {
+  margin: 0;
+}
+
+.hint__mouse__img {
+  width: 25vh;
+}
+
+.hint__img {
+  width: 50%;
+  margin-top: 1rem;
+}
+
+.building__detail {
+  background-color: #f9dc5c;
+  height: 3.5rem;
+  width: 3.5rem;
+  border: 0.5px solid black;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px -3px rgba(6, 7, 14, 1);
+  padding: 5px;
+}
+
+.building__detail:hover,
+.building__detail:active,
+.building__detail:focus {
+  background-color: #743880;
+  transform: scale(1.2);
+}
+
+.inactive {
+  filter: grayscale();
+}
+
+/* Hra – karta indicie */
+
+.game__indication {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.game__indication h4 {
+  margin: 0;
+}
+
+.indication__img {
+  width: 25vh;
+}
+
+.indication__text p {
+  margin: 0;
+}
+
+/* Hra - karta vyhodnocení rébusu */
+
+.game__quizz__result {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.game__quizz_result h4 {
+  margin: 0;
+}
+
+.result__img {
+  width: 50vh;
+}
+
+.result__img__bonus {
+  width: 5vw;
+}
+
+.result__text p {
+  margin: 0;
+}

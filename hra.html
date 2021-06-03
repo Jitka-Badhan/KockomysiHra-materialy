@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hra</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <section class="header">
+        <div class="container">
+          <img
+            class="header__img"
+            src="img/mouse_silhouette.png"
+            alt="mouse silhouette"
+          />
+          <h1 class="rules__header header__inline">
+            <span class="logo">Kočkomyší hra</span>
+            <img
+              src="img/logo_mouse_footprint.png"
+              alt="mouse footprint"
+              class="logo__img"
+            />
+            <span class="page_name">hra</span>
+          </h1>
+          <img
+            class="header__img"
+            src="img/cat1_white.png"
+            alt="cat_silhouette"
+          />
+        </div>
+      </section>
+    </header>
+
+    <div class="container game">
+      <div class="container game__side">
+        <div class="container navigation game__nav">
+          <a href="/index.html">
+            <img class="nav__icon home" src="/img/home.svg" alt="home icon" />
+            <p>Domů</p>
+          </a>
+          <a href="/pravidla.html">
+            <img class="nav__icon rules" src="/img/book.svg" alt="book icon" />
+            <p>Pravidla</p>
+          </a>
+          <a href="">
+            <img
+              class="nav__icon rules"
+              src="/img/bookmark.svg"
+              alt="book icon"
+            />
+            <p>Uložit</p>
+          </a>
+        </div>
+
+        <div class="container inventory">
+          <div class="inventory__header">
+            <div class="inventory__icon">
+              <!-- <img
+              src="img/inventory.png"
+              alt="backpack icon"
+              class="inventory__img"
+              /> -->
+              <p>Inventář</p>
+              <hr />
+            </div>
+
+            <div class="container game__counters">
+              <div class="game__counter test_tubes">
+                <!-- <p class="test_tube__text">Kočvid-19</p> -->
+                <img
+                  src="/img/test-tube.png"
+                  alt="test tube icon"
+                  class="test_tube__img"
+                />
+                <div class="test__tube">
+                  <div class="test_tube__count">5</div>
+                </div>
+              </div>
+              <div class="countR">
+                <!-- <p class="countR__text">R</p> -->
+                <div class="countR__count">1.0</div>
+              </div>
+              <div class="game__counter watch">
+                <!-- <p class="timer__text">Čas</p> -->
+                <img
+                  src="img/watch_col.png"
+                  alt="watch icon"
+                  class="timer__img"
+                />
+                <div class="timer">
+                  <div class="timer__count">60:00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container inventory__items">
+            <div class="inventory__column">
+              <img
+                src="img/buildings/library_icon.png"
+                alt="library"
+                class="building__detail inactive"
+              />
+              <img
+                src="img/buildings/shopping_mall_icon.png"
+                alt="shopping mall"
+                class="building__detail inactive"
+              />
+              <img
+                src="img/buildings/factory_icon.png"
+                alt="factory"
+                class="building__detail inactive"
+              />
+            </div>
+            <div class="inventory__column">
+              <img
+                src="img/buildings/park_icon.png"
+                alt="park with pond and bridge"
+                class="building__detail inactive"
+              />
+              <img
+                src="img/buildings/bar_icon.png"
+                alt="bar"
+                class="building__detail inactive"
+              />
+            </div>
+            <div class="inventory__column">
+              <img
+                src="img/buildings/municipal_house_icon.png"
+                alt="municipal building"
+                class="building__detail inactive"
+              />
+              <img
+                src="img/buildings/house_modern_icon.png"
+                alt="moder house"
+                class="building__detail inactive"
+              />
+              <img
+                src="img/buildings/house_rustic_icon.png"
+                alt="rustic house"
+                class="building__detail inactive"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="container game__bar">
+          <div class="container navigation game__nav">
+            <a href="/index.html">
+              <img class="nav__icon home" src="/img/home.svg" alt="home icon" />
+              <p>Domů</p>
+            </a>
+            <a href="/pravidla.html">
+              <img
+                class="nav__icon rules"
+                src="/img/book.svg"
+                alt="book icon"
+              />
+              <p>Pravidla</p>
+            </a>
+            <a href="">
+              <img
+                class="nav__icon rules"
+                src="/img/bookmark.svg"
+                alt="book icon"
+              />
+              <p>Uložit</p>
+            </a>
+          </div>
+          <div class="container game__counters">
+            <div class="container game__counter test_tubes">
+              <img
+                src="/img/test-tube.png"
+                alt="test tube icon"
+                class="test_tube__img"
+              />
+              <div class="test__tube">
+                <div class="test_tube__count">5</div>
+                <p class="test_tube__text">Kočvid-19</p>
+              </div>
+            </div>
+            <div class="container game__counter watch">
+              <img
+                src="img/watch_col.png"
+                alt="watch icon"
+                class="timer__img"
+              />
+              <div class="timer">
+                <div class="timer__count">60:00</div>
+                <p class="timer__text">Čas</p>
+              </div>
+              <div class="countR">
+                <div class="countR__count">1.0</div>
+                <p class="countR__text">R</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+      <div class="main game__main">
+
+        <!-- Karta s mapou -->
+        <div class="card game__map">
+          <div class="card__content">
+            <div class="map"></div>
+          </div>
+        </div>
+
+        <!-- Karta budovy -->
+        <!-- <div class="card game__building">
+            <img src="/img/cross.svg" alt="cross" class="top-right cancel">
+            <div class="card__content">
+              <img src="/img/buildings/bar.jpg" alt="empty bar" class="building__img" />
+              <div class="building__text">
+                <h4>Hospoda</h4>
+                <p>Tohle je místní putyka,</p>
+                <p>kočky tu sedí u mlíka.</p>
+                <p>Nakaž tu, která žere myši</p>
+                <p>a nákaza se prudce zvýší.</p>
+              </div>
+              <div class="card__buttons">
+                <button class="cancel">Zpět na mapu</button>
+                <button class="toQuiz">Přejdi na rébus</button>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- Karta s radnicí a kočkou -->
+          <!-- <div class="card game__building municipal_house">
+            <img src="/img/cross.svg" alt="cross" class="top-right cancel">
+            <div class="card__content">
+              <img src="/img/buildings/municipal_house_cat.png" alt="municipal cat office" class="building__img" />
+              <div class="building__text">
+                <h4>Radnice</h4>
+                <p>Mám klíč,</p>
+                <p>ale není zadarmo...</p>
+                <p>Kušuj, nebo tě sežeru!</p>
+              </div>
+              <div class="card__buttons">
+                <button class="cancel">Zpět na mapu</button>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- Karta s radnicí a kočkou – vyřešeno -->
+          <!-- <div class="card game__building municipal_house">
+            <img src="/img/cross.svg" alt="cross" class="top-right cancel">
+            <div class="card__content">
+              <img src="/img/buildings/municipal_house_cat_milk.png" alt="municipal cat office" class="building__img" />
+              <div class="building__text">
+                <h4>Radnice</h4>
+                <p>Áááá, přesně to jsem potřeboval.</p>
+                <p>Zde máš čipovou kartu do továrny</p>
+                <p>a táhni mi z očí!</p>
+              </div>
+              <div class="card__buttons">
+                <button class="cancel">Ok</button>
+              </div>
+            </div>
+          </div> -->
+
+        <!-- Karta s rébusem -->
+        <!-- <div class="card game__quizz">
+          <img src="/img/cross.svg" alt="cross" class="top-right cancel" />
+          <div class="card__content">
+            <div class="container quizz">
+              <img
+                src="/img/quizzes/quizz1.jpeg"
+                alt="quizz from library"
+                class="quizz__img"
+              />
+              <div class="quizz__text">
+                <h4>Najdi kočku, co se po studiu setká s nejvíce kočkami.</h4>
+                <table class="quizz__answers">
+                  <tr class="answer">
+                    <td>
+                      <button class="answer__button">A</button>
+                    </td>
+                    <td>
+                      <img
+                        src="img/quizzes/cat_black.png"
+                        alt="black cat"
+                        class="answer__img catA"
+                      />
+                    </td>
+                  </tr>
+                  <tr class="answer">
+                    <td>
+                      <button class="answer__button">B</button>
+                    </td>
+                    <td>
+                      <img
+                        src="img/quizzes/cat_white.png"
+                        alt="white cat"
+                        class="answer__img catB"
+                      />
+                    </td>
+                  </tr>
+                  <tr class="answer">
+                    <td>
+                      <button class="answer__button">C</button>
+                    </td>
+                    <td>
+                      <img
+                        src="img/quizzes/cat_orange.png"
+                        alt="ginger cat"
+                        class="answer__img catC"
+                      />
+                    </td>
+                  </tr>
+                  <tr class="answer">
+                    <td>
+                      <button class="answer__button">C</button>
+                    </td>
+                    <td>
+                      <img
+                        src="img/quizzes/cat_grey.png"
+                        alt="grey cat"
+                        class="answer__img catD"
+                      />
+                    </td>
+                  </tr>
+                </table>
+                <div class="card__buttons">
+                  <button class="cancel">Zrušit</button>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- Karta s vyhodnocením – správná odpověď -->
+          <!-- <div class="card game__quizz__result result--right">
+            <img src="/img/cross.svg" alt="cross" class="top-right cancel">
+            <img src="img/quizzes/cat_dead.png" alt="dead ginger cat" class="result__img" />
+            <div class="result__text">
+              <h4>Bravo!</h4>
+              <p>Zde kočky už nezachlastají.</p>
+              <p>R se zvyšuje o <strong>0.5.</strong>.</p>
+            </div>
+            <div class="card__buttons">
+              <button class="cancel">Ok</button>
+            </div>
+          </div> -->
+
+          <!-- Karta s vyhodnocením – správná odpověď – supermarket -->
+          <!-- <div class="card game__quizz__result result--right">
+            <img src="/img/cross.svg" alt="cross" class="top-right cancel">
+            <img src="img/quizzes/cat_dead.png" alt="dead ginger cat" class="result__img" />
+            <div class="result__text">
+              <h4>Bravo!</h4>
+              <p>Bystré oko, to se hned pozná.</p>
+              <p>R se zvyšuje o <strong>0.5.</strong></p>
+              <p>Získáváš jako bonus kondenzované mléko!</p>
+            </div>
+            <img src="img/quizzes/milk_can.png" alt="condensed milk" class="result__img__bonus" />
+            <div class="card__buttons">
+              <button class="cancel">Ok</button>
+            </div>
+          </div> -->
+
+          <!-- Karta s vyhodnocením – neúplná odpověď -->
+          <!-- <div class="card game__quizz__result result--middle">
+            <img src="/img/cross.svg" alt="cross" class="top-right cancel">
+            <img src="/img/quizzes/cat_sick.png" alt="sick ginger cat" class="result__img" />
+            <div class="result__text">
+              <h4>Mohlo by to být lepší...</h4>
+              <p>Společenská kočka se chová jinak.</p>
+              <p>R se zvyšuje pouze o 0.2.</p>
+            </div>
+            <div class="card__buttons">
+              <button class="cancel">Zpět na mapu</button>
+            </div>
+          </div> -->
+
+          <!-- Karta s vyhodnocením – špatná odpověď -->
+          <!-- <div class="card game__quizz__result result--wrong">
+            <img src="/img/cross.svg" alt="cross" class="top-right cancel">
+            <img src="/img/quizzes/cat_healthy.png" alt="healthy ginger cat" class="result__img" />
+            <div class="result__text">
+              <h4>Špatně...</h4>
+              <p>Kočky si na Tebe dají rundu.</p>
+            </div>
+            <div class="card__buttons">
+              <button class="cancel">Zpět na mapu</button>
+            </div>
+          </div> -->
+
+          <!-- Karta indicie -->
+          <!-- <div class="card game__indication">
+            <img src="/img/cross.svg" alt="cross" class="top-right cancel">
+            <h4>V budově byla schována indicie</h4>
+            <img src="img/quizzes/books.png" alt="pile of books" class="indication__img" />
+            <div class="indication__text">
+              <p>Vítáme Tě mezi námi,</p>
+              <p>jedna rada je tu k mání.</p>
+              <p>Chceš-li se na konec dostat,</p>
+              <p>musíš se od konce dívat.</p>
+            </div>
+            <div class="card__buttons">
+              <button class="cancel">Ok</button>
+            </div>
+          </div> -->
+
+          <!-- Karta hřbitova -->
+          <!-- <div class="card game__cemetery">
+            <img src="/img/cross.svg" alt="cross" class="top-right cancel">
+            <div class="card__content">
+              <img src="img/buildings/cemetery.jpg" alt="cemetery day" class="cemetery__img" />
+              <div class="cemetery__text">
+                <h4>Hřbitov</h4>
+                <div class="container">
+                  <div class="paragraph">
+                    <p>Tady u nás na hřbitově</p>
+                    <p>mrtvé myšky leží v hrobě.</p>
+                    <p>Nakaž kočky, brachu,</p>
+                    <p>nepoddej se strachu!</p>
+                  </div>
+                  <div class="paragraph">
+                    <p>Když budeš chtít poradit,</p>
+                    <p>na mě se můžeš obrátit.</p>
+                    <p>Ale zbytečně mě nezdržuj,</p>
+                    <p>raději zapoj rozum svůj.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cemetery__buttons">
+                <img src="img/buildings/library_icon.png" alt="library" class="cemetery__button building__detail" />
+                <img src="img/buildings/shopping_mall_icon.png" alt="shopping mall" class="cemetery__button building__detail" />
+                <img src="img/buildings/factory_icon.png" alt="factory" class="cemetery__button building__detail" />
+                <img src="img/buildings/park_icon.png" alt="park with pond and bridge" class="cemetery__button building__detail" />
+                <img src="img/buildings/bar_icon.png" alt="bar" class="cemetery__button building__detail" />
+              </div>
+              <div class="card__buttons">
+                <button class="cancel">Zrušit</button>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- Karta nápovědy -->
+          <!-- <div class="card game__hints">
+            <img src="/img/cross.svg" alt="cross" class="top-right cancel">
+            <img src="img/photos/photo-like_square.png" alt="mysterious mouse in hood" class="hint__mouse__img" />
+            <h4>Zde je tvoje nápověda:</h4>
+            <div class="hint">
+                <h4>Knihovna</h4>
+                <img src="img/quizzes/hint_bar.png" alt="hint for quizz of bar" class="hint__img" />
+                <p>Každý obrázek reprezentuje jeden znak.</p>
+            </div>
+            <div class="card__buttons">
+              <button class="cancel">Ok</button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
