@@ -204,6 +204,27 @@ section {
   margin-top: 2rem;
 }
 
+.epilogue__text {
+  margin-right: 3rem;
+}
+
+.rules__epilogue > button {
+  background-color: #c44536;
+  color: white;
+  flex-basis: 20%;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+}
+
+.rules__epilogue > button:hover,
+.rules__epilogue > button:active,
+.rules__epilogue > button:focus {
+  transform: scale(1.2);
+  background-color: #772e25;
+}
+
 /* Styly stránky hra */
 
 /* Hra – obecné styly */
