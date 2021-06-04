@@ -220,7 +220,7 @@ section {
   margin: 0 auto;
 }
 
-.form__button {
+.form__buttons .button {
   background-color: #c44536;
   color: white;
   text-decoration: none;
@@ -230,9 +230,9 @@ section {
   margin-right: 2rem;
 }
 
-.form__button:hover,
-.form__button:active,
-.form__button:focus {
+.form__buttons .button:hover,
+.form__buttons .button:active,
+.form__buttons .button:focus {
   background-color: #197278;
 }
 
