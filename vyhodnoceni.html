@@ -9,46 +9,88 @@
   </head>
   <body>
     <header>
-      <section class="header">
-        <div class="container">
+      <div class="container header">
+        <img
+          class="header__img"
+          src="img/mouse_silhouette.png"
+          alt="mouse silhouette"
+        />
+        <h1 class="rules__header header__inline">
+          <span class="logo">Kočkomyší hra</span>
           <img
-            class="header__img"
-            src="img/mouse_silhouette.png"
-            alt="mouse silhouette"
+            src="img/logo_mouse_footprint.png"
+            alt="mouse footprint"
+            class="logo__img"
           />
-          <h1 class="rules__header header__inline">
-            <span class="logo">Kočkomyší hra</span>
-            <img
-              src="img/logo_mouse_footprint.png"
-              alt="mouse footprint"
-              class="logo__img"
-            />
-            <span class="page_name">vyhodnocení</span>
-          </h1>
-          <img
-            class="header__img"
-            src="img/cat1_white.png"
-            alt="cat_silhouette"
-          />
-        </div>
-      </section>
+          <span class="page_name">vyhodnocení</span>
+        </h1>
+        <img
+          class="header__img"
+          src="img/cat1_white.png"
+          alt="cat_silhouette"
+        />
+      </div>
     </header>
 
-    <section class="navigation rules__nav">
-      <a href="/index.html">
-        <img class="nav__icon home" src="/img/home.svg" alt="home icon" />
-        <p>Domů</p>
-      </a>
-      <a href="/pravidla.html">
-        <img
-          class="nav__icon next"
-          src="/img/arrow-right.svg"
-          alt="next icon"
-        />
-        <p>Pravidla</p>
-      </a>
+    <section class="main certificate__main">
+      <div class="container certificate">
+        <div class="certificate__photo">
+          <img
+            src="/img/photos/photo-like_portrait.png"
+            alt="photo of mouse puppet"
+            class="certificate__img"
+          />
+          <div class="certificate__text">
+            <div>Ministr zdravotnictví</div>
+            <div>Myšák</div>
+          </div>
+          <img src="/img/seal.png" alt="seal" class="certificate__seal" />
+        </div>
+        <div class="container certificate__scores">
+          <div class="scores__heading">
+            <div>Je po boji a kočky strádají...</div>
+            <div>Z Mňoučena se stal Myšen. Děkujeme za pomoc, agente!</div>
+          </div>
+          <div class="scores__score">
+            <h4>Tvoje skóre:</h4>
+            <table>
+              <tr class="score__quizzes">
+                <td>Rébusy:</td>
+                <td>5</td>
+              </tr>
+              <tr class="score__time">
+                <td>Čas:</td>
+                <td>45:13</td>
+              </tr>
+              <tr class="score__R">
+                <td>Číslo R:</td>
+                <td>1,6</td>
+              </tr>
+            </table>
+          </div>
+          <div class="scores__rank">
+            Mezi ostatními ses umístil na <strong>4. místě</strong> z 11.
+          </div>
+          <div class="scores__title__text">
+            <div>Vysloužil sis hodnost:</div>
+            <div class="scores__title">Ministr zdravotnictví</div>
+          </div>
+          <div class="container certificate__buttons">
+            <a href="" class="button share">
+              <img src="/img/facebook.svg" alt="Facebook logo" />
+              <p>Sdílej</p>
+            </a>
+            <a href="" class="button print">
+              <img src="img/print.svg" alt="print icon" />
+              <p>Tiskni</p>
+            </a>
+            <a href="" class="button next">
+              <img src="/img/arrow-next.svg" alt="arrow next" />
+              <p>Konec</p>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
-
-    <section class="main intro__main"></section>
   </body>
 </html>

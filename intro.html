@@ -9,46 +9,74 @@
   </head>
   <body>
     <header>
-      <section class="header">
-        <div class="container">
+      <div class="container header">
+        <img
+          class="header__img"
+          src="img/mouse_silhouette.png"
+          alt="mouse silhouette"
+        />
+        <h1 class="rules__header header__inline">
+          <span class="logo">Kočkomyší hra</span>
           <img
-            class="header__img"
-            src="img/mouse_silhouette.png"
-            alt="mouse silhouette"
+            src="img/logo_mouse_footprint.png"
+            alt="mouse footprint"
+            class="logo__img"
           />
-          <h1 class="rules__header header__inline">
-            <span class="logo">Kočkomyší hra</span>
-            <img
-              src="img/logo_mouse_footprint.png"
-              alt="mouse footprint"
-              class="logo__img"
-            />
-            <span class="page_name">intro</span>
-          </h1>
-          <img
-            class="header__img"
-            src="img/cat1_white.png"
-            alt="cat_silhouette"
-          />
-        </div>
-      </section>
+          <span class="page_name">intro</span>
+        </h1>
+        <img
+          class="header__img"
+          src="img/cat1_white.png"
+          alt="cat_silhouette"
+        />
+      </div>
     </header>
 
-    <section class="navigation rules__nav">
-      <a href="/index.html">
+    <section class="navigation intro__nav">
+      <a href="/domu.html">
         <img class="nav__icon home" src="/img/home.svg" alt="home icon" />
         <p>Domů</p>
       </a>
       <a href="/pravidla.html">
-        <img
-          class="nav__icon next"
-          src="/img/arrow-right.svg"
-          alt="next icon"
-        />
+        <img class="nav__icon next" src="/img/arrow-next.svg" alt="next icon" />
         <p>Pravidla</p>
       </a>
     </section>
 
-    <section class="main intro__main"></section>
+    <section class="main intro__main">
+      <div class="container intro">
+        <img
+          src="img/photos/photo-like_rectangle.png"
+          alt=""
+          class="intro__img"
+        />
+        <div class="intro__text">
+          <p>Bylo kdysi krásné město...</p>
+          <p>Kočkomyšen, název, neslo.</p>
+          <p>A v něm pěkně pospolu,</p>
+          <p>dělili se u stolu</p>
+          <p>kočky, myši, kamarádi,</p>
+          <p>Tehdy se zde měli rádi.</p>
+        </div>
+      </div>
+      <div class="container intro__buttons">
+        <a href="" class="container intro__button">
+          <p>Předchozí</p>
+          <img
+            class="intro__button_img"
+            src="/img/arrow-left.svg"
+            alt="arrow icon"
+          />
+        </a>
+        <a href="" class="container intro__button">
+          <img
+            class="intro__button_img"
+            src="/img/arrow-right.svg"
+            alt="arrow icon"
+          />
+          <p>Následující</p>
+        </a>
+      </div>
+    </section>
   </body>
 </html>

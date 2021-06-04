@@ -7,6 +7,8 @@
 
 body {
   margin: 0;
+  position: relative;
+  height: 100vh;
 }
 
 h1 {
@@ -18,18 +20,16 @@ p {
 }
 
 section {
-  margin: 2rem 0;
-}
-
-.main {
-  padding-bottom: 2rem;
-}
-
-.main,
-.main__nav {
   margin: 0 auto;
   width: 80vw;
   max-width: 95vw;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 10.5rem);
 }
 
 .container {
@@ -39,6 +39,7 @@ section {
 /* Styly hlavičky */
 
 .header {
+  justify-content: space-between;
   /* background-color: #743880; */
   background-color: #283d3b;
   color: white;
@@ -46,10 +47,6 @@ section {
   height: 3rem;
   padding: 0.5rem;
   margin: 0;
-}
-
-.header .container {
-  justify-content: space-between;
 }
 
 .header span {
@@ -85,6 +82,7 @@ section {
 .navigation {
   display: flex;
   justify-content: flex-start;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -93,13 +91,9 @@ section {
   text-decoration: none;
   font-size: smaller;
   font-weight: bold;
-  margin-right: 2.5rem;
+  margin-right: 0;
   padding: 5px;
   border-radius: 5px;
-}
-
-.navigation > a {
-  margin-right: 0;
 }
 
 .navigation > a:active,
@@ -128,16 +122,148 @@ section {
   margin: 5px 0 0 0;
 }
 
-/* Styly stránky s pravidly */
+/* Styly stránky domů */
 
-.rules__main {
-  margin: 0 auto;
-  width: 80vw;
-  max-width: 95vw;
+.home__main {
+  width: 100%;
+  height: calc(100vh - 4rem);
 }
 
-.rules__nav > a {
+.home__main h1 {
+  font-family: 'Amatic SC';
+  font-size: 64px;
+  line-height: 1;
+  text-align: center;
+  text-shadow: 2px 2px silver;
+  color: #283d3b;
+}
+
+.home__main > img {
+  max-width: 50vw;
+  max-height: 55vh;
+  margin: 2rem auto;
+}
+
+.home__buttons {
+  justify-content: center;
+}
+
+.home__buttons .button {
+  background-color: #c44536;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  margin-right: 1rem;
+}
+
+.home__buttons .button:last-of-type {
+  margin-right: 0;
+}
+
+.home__buttons .button:hover,
+.home__buttons .button:active,
+.home__buttons .button:focus {
+  background-color: #197278;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #197278;
+  color: white;
+  padding: 1rem 0;
+}
+
+.footer__button {
+  background-color: #c44536;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 2rem;
+}
+
+/* Styly stránky intro */
+
+.intro__nav > a {
+  margin-right: 2rem;
+}
+
+.intro__img {
+  width: 50vw;
+  max-width: 80vmin;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.intro__text {
+  background-color: #edddd4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  text-align: center;
+  line-height: 1;
+  border-radius: 5px;
+  margin-left: 2rem;
+}
+
+.intro__text > p {
+  font-family: 'Pacifico';
+  font-size: larger;
+}
+
+.intro__text > p:last-of-type {
+  margin-bottom: 0;
+}
+
+.intro__buttons {
+  justify-content: space-between;
   margin-top: 1rem;
+}
+
+.intro__button {
+  background-color: #c44536;
+  color: white;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.intro__button:hover,
+.intro__button:active,
+.intro__button:focus {
+  background-color: #197278;
+  transform: scale(1.1);
+}
+
+.intro__button:first-of-type > img {
+  margin-left: 1rem;
+}
+
+.intro__button:last-of-type > img {
+  margin-right: 1rem;
+}
+
+.intro__button > img {
+  filter: invert();
+}
+
+.intro__button > p {
+  margin: 0;
+}
+
+/* Styly stránky s pravidly */
+
+.rules__nav > a {
   margin-right: 2rem;
 }
 
@@ -202,6 +328,7 @@ section {
 .rules__epilogue {
   background-color: #197278;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .epilogue__text {
@@ -248,6 +375,7 @@ section {
 
 .game__nav {
   margin-right: 1.5rem;
+  margin-top: 0;
   background-color: #197278;
   border-radius: 5px;
   justify-content: space-evenly;
@@ -364,7 +492,6 @@ section {
 }
 
 .inventory__items {
-  /* padding: 1rem; */
   margin: 0 auto;
   flex-basis: 38vh;
 }
@@ -399,15 +526,6 @@ section {
   height: 100%;
 }
 
-.map {
-  background-image: url(img/Asset\ 2.jpeg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 60vw;
-  height: 80vh;
-}
-
 .card__content {
   display: flex;
   flex-direction: column;
@@ -430,6 +548,15 @@ section {
 .top-right:focus {
   /* background-color: #f9dc5c; */
   background-color: #197278;
+}
+
+/* Hra – mapa */
+
+.map__heading {
+  font-family: 'Pacifico';
+  font-size: larger;
+  color: #283d3b;
+  text-shadow: 2px 2px silver;
 }
 
 /* Hra – karta budovy */
@@ -644,4 +771,113 @@ section {
 
 .result__text p {
   margin: 0;
+}
+
+/* Styly stránky s vyhodnocením */
+
+.certificate__main {
+  height: calc(100vh - 4rem);
+}
+
+.certificate {
+  justify-content: space-evenly;
+  background-color: #197278;
+  border-radius: 5px;
+  padding: 2rem;
+}
+
+.certificate__photo {
+  position: relative;
+}
+
+.certificate__img {
+  height: 70vh;
+  width: 50vh;
+}
+
+.certificate__text > div {
+  font-family: 'Amatic SC';
+  font-size: 32px;
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+}
+
+.certificate__text > div:last-of-type {
+  font-family: 'Pacifico';
+  font-size: 24px;
+  top: 80%;
+}
+
+.certificate__seal {
+  position: absolute;
+  width: 3rem;
+  bottom: -1.5rem;
+  right: 1rem;
+}
+
+.certificate__scores {
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: #edddd4;
+  height: 70vh;
+  width: 50vh;
+  border-radius: 5px;
+}
+
+.scores__heading > div:first-of-type {
+  font-weight: 700;
+}
+
+.scores__heading,
+.scores__rank {
+  padding: 0 2rem;
+}
+
+.scores__score h4 {
+  margin: 0;
+}
+
+.scores__score > table {
+  margin: 0 auto;
+}
+
+.scores__title {
+  font-size: larger;
+  font-weight: 700;
+}
+
+.certificate__buttons {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.certificate__buttons .button {
+  text-decoration: none;
+}
+
+.certificate__buttons img {
+  width: 2rem;
+}
+
+.certificate__buttons p {
+  background-color: #c44536;
+  border-radius: 5px;
+  font-weight: 700;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding: 5px 10px;
+}
+
+.certificate__buttons p:hover,
+.certificate__buttons p:active,
+.certificate__buttons p:focus {
+  background-color: #197278;
+}
+
+.certificate__scores {
 }
