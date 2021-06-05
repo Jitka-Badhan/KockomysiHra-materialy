@@ -1,37 +1,48 @@
 const data = {
-  intro : [
+  intro : {
+    id : 0,
+    img : '/assets/img/...', 
+    texts : [
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+    ]},
     {
-      vers1 : '',
-      vers2 : '',
-      vers3 : '',
-      vers4 : '',
-      vers5 : '',
-      vers6 : '',
-    },
-    {
-      vers1 : '',
-      vers2 : '',
-      vers3 : '',
-      vers4 : '',
-      vers5 : '',
-      vers6 : '',
-    },
-    {
-      vers1 : '',
-      vers2 : '',
-      vers3 : '',
-      vers4 : '',
-      vers5 : '',
-      vers6 : '',
-    },
-    {
-      vers1 : '',
-      vers2 : '',
-      vers3 : '',
-      vers4 : '',
-      vers5 : '',
-      vers6 : '',
-    },
+      id : 1,
+      img : '/assets/img/...', 
+      texts : [
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+      ]},
+      {
+        id : 2,
+        img : '/assets/img/...', 
+        texts : [
+          '',
+          '',
+          '',
+          '',
+          '',
+          '',
+        ]},
+        {
+          id : 3,
+          img : '/assets/img/...', 
+          texts : [
+            '',
+            '',
+            '',
+            '',
+            '',
+            '',
+          ]},
   ],
   buildings : [
     {
@@ -39,9 +50,8 @@ const data = {
       mapImg : '',
       cardImg : '',
       function : 'quizz',
-      description : '',
+      description : ['', '', '', '',],
       quizz : {
-        isPresent : true;
         name : '',
         pic : '',
         text : '',
@@ -50,24 +60,29 @@ const data = {
             button : 'A',
             text : '',
             pic : '',
+            points : cislo,
           }, 
           {
-            button : 'B',
+            button : 'A',
             text : '',
             pic : '',
+            points : cislo,
           },
           {
-            button : 'C',
+            button : 'A',
             text : '',
             pic : '',
+            points : cislo,
           },
           {
-            button : 'D',
+            button : 'A',
             text : '',
             pic : '',
+            points : cislo,
           }, 
         ],
-        solution : '',
+        solution : {
+          '',}
         hint : {
           text : '',
           pic : '',
@@ -75,7 +90,7 @@ const data = {
         isSolved : false,
         result : {
           ifCorrect : '',
-          ifLessCorrect : '',
+          ifPartiallyCorrect : '',
           ifNotCorrect : '',
         }
       },
@@ -86,5 +101,4 @@ const data = {
       },
       isActive : false,
     },
-  ]
 }
